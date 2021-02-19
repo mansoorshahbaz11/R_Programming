@@ -5,6 +5,15 @@ date: "May 14, 2020"
 output: html_document
 ---
 
+title <- ("introduction to Rstudio")
+author <- ("Mansoor Shahbaz")
+date <- ("October 17, 2021")
+print(title)
+print(author)
+print(date)
+
+
+
 
 ##### NOTE: 
 1. Change author name and date to your exercise submission date in above section
