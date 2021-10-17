@@ -11,7 +11,7 @@ date <- ("October 17, 2021")
 print(title)
 print(author)
 print(date)
-print("error fixed")
+
 
 
 
@@ -33,27 +33,34 @@ print("error fixed")
 
 
 ```{r }
-#### Start solution ####
+x <- c("M","A","N","S","O","O","R")
+x
 ```
 
 
 ```{r }
-
+p <- x
+print(p)
 ```
 
 
 ```{r }
-
+seq_list <- 100:120
+seq_list
 ```
 
 
 ```{r }
-
+x <- matrix(2*1:9,3,3)
+x
 ```
 
 
 ```{r }
-
+name = ("Mansoor")
+author =("Mansoor Shahbaz")
+print(name)
+print(author)
 ```
 
 
