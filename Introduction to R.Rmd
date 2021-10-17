@@ -11,6 +11,7 @@ date <- ("October 17, 2021")
 print(title)
 print(author)
 print(date)
+print("error fixed")
 
 
 
