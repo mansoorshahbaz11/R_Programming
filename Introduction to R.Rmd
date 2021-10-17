@@ -57,10 +57,8 @@ x
 
 
 ```{r }
-name = ("Mansoor")
-author =("Mansoor Shahbaz")
-print(name)
-print(author)
+dimnames(x) <- list(c("r1","r2","r3"),c("c1","c2","c3"))
+x
 ```
 
 
@@ -76,22 +74,26 @@ print(author)
 
 
 ```{r }
-#### Start solution ####
+x<-"Employed"
+y<-"Unemployed"
+z<-"Self-Employed"
+emp_status<-factor(c(x,y,z,x,z,y,x,z,y,))
+emp_status
 ```
 
 
 ```{r }
-
+table(emp_status)
 ```
 
 
 ```{r }
-
+unclass(emp_status)
 ```
 
 
 ```{r }
-
+class(emp_status)
 ```
 
 
