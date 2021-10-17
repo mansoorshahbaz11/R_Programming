@@ -115,22 +115,22 @@ class(emp_status)
 
 
 ```{r }
-#### Start solution ####
+customer_bank = data.frame(CustomerID <- c("Alicia","Nancy","Fernando","Louis","Diane"), hasAccount <- c(F,T,T,T,NA), totalBalance <-c(NA,10000,100,0,NA))
 ```
 
 
 ```{r }
-
+nrow(customer_bank)
 ```
 
 
 ```{r }
-
+ncol(customer_bank)
 ```
 
 
 ```{r }
-
+names(customer_bank)
 ```
 
 
