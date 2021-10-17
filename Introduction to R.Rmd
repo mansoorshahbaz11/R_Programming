@@ -157,11 +157,50 @@ names(customer_bank)
 
 
 ```{r }
-#### Start solution ####
+s <- 0:100
+for (i in s) {
+   if (i == 0) {
+    next
+   } else if (i == 1) {
+    next
+   } else if (i == 2) {
+    i = 2 
+   } else if (i %% 2 == 0) {
+    next
+   } else if (i == 3) {
+    i = 3
+   } else if (i %% 3 == 0) {
+    next
+  }
+    
+  print(i)
+}
 ```
 
 
 ```{r }
+seq <- c(1:100)
+var <- 1
+Counter_N_Var <- 1
+while(Counter_N_Var > 10) {
+  i <- seq[var]
+  var <- var+1 
+  if(i == 1) next;
+  prime_number <- T
+  x = seq(2,i-1) 
+ for (a in x) {
+   if(i %% a == 0){
+     prime_number = F
+     break
+   
+ }
+ }
+  if(prime_number){
+    print(seq[var-1])
+    Counter_N_Var = Counter_N_Var +1
+  }
+}
+  
 
 ```
 
@@ -196,11 +235,19 @@ names(customer_bank)
 
 
 ```{r }
-#### Start solution ####
+mat_1 <- matrix(1:9, 3, 3)
+mat_1
 ```
 
 
 ```{r }
+for (r in 1:nrow(mat_1)) {
+  for (c in 1:ncol(mat_1)) {
+    print(mat_1[r,c])
+    
+  }
+  
+}  
 
 ```
 
