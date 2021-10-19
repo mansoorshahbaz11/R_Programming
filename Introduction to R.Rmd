@@ -288,7 +288,23 @@ for (r in 1:nrow(mat_1)) {
 
 
 ```{r }
-#### Start solution ####
+gcd<-function(a,b){
+  if(a>b){
+      mn=a
+    }
+  else{
+      mn=b
+    }
+    
+  for(i in 1:mn){
+      if((a%%i==0) &&( b%%i==0)){
+      answer=i
+        }
+    }
+  return(answer)
+  }
+gcd(24,12)
+answer<-gcd(54,67)
 ```
 
 
@@ -335,6 +351,14 @@ for (r in 1:nrow(mat_1)) {
 
 
 ```{r }
+allconditionsMeet(3,9)
+allconditionsMeet <- function(a,b) {
+  if((a<b) && (b %% a == 0)) {
+    return(TRUE)
+  } else {
+    return(FALSE)
+  }
+}
 
 ```
 
@@ -382,29 +406,36 @@ for (r in 1:nrow(mat_1)) {
 
 
 ```{r }
-
+matrix_1 <- matrix(1:6, 2, 3)
+matrix_1
 ```
 
 
 ```{r }
-
+matrix_2 <- matrix(10:15, 3, 2)
+matrix_2
 ```
 
 
 ```{r }
-
+matrix_1*matrix_1
 ```
 
 
 ```{r }
-
+matrix_1 %*% matrix_2
 ```
 
 
 ```{r }
+my_data <- matrix(1:6,3,3)
+my_data
 
-```
+x <- function(my_data) {
+  return(det(my_data))
+}
 
+my_data
 
 ```{r }
 #### End solution ####
@@ -426,22 +457,35 @@ for (r in 1:nrow(mat_1)) {
 
 
 ```{r }
-
+curr_date <- Sys.Date()
+curr_date
 ```
 
 
 ```{r }
+curr_time <- Sys.time()
+curr_time
+p <- as.POSIXlt(curr_time)
+p
+names(unclass(p))
 
+p$sec
+p$min
+p$hour
+p$year
 ```
 
 
 ```{r }
-
+t <- as.POSIXlt(curr_date)
+t
+names(unclass(t))
 ```
 
 
 ```{r }
-
+t$sec
+t$min
 ```
 
 
@@ -466,17 +510,20 @@ for (r in 1:nrow(mat_1)) {
 
 
 ```{r }
+x <- Sys.time()
+x
 
 ```
 
 
 ```{r }
-
+y <- as.POSIXlt(x, tz = "GMT")
+y
 ```
 
 
 ```{r }
-
+x-y
 ```
 
 
