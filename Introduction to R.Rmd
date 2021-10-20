@@ -606,11 +606,15 @@ tapply(a, b, mean)
 
 
 ```{r }
-#### Start solution ####
-```
+x <- matrix(1:4,2,2)
+x
+colMeans(x)
+rowMeans(x)
+print(colMeans(x))
+print(rowMeans(x))
+``
 
 
-```{r }
 
 ```
 
@@ -664,11 +668,20 @@ head(Orange)
 
 
 ```{r }
-#### Start solution ####
+split_data <- split(Orange, Orange$circumference)
+split_data
+print(split_data$"30")
+print(split_data$"75")
+
 ```
 
 
 ```{r }
+v= c(split_data$"30")
+mean(v$age)
+
+v = c(split_data$"214")
+mean(v$age)
 
 ```
 
