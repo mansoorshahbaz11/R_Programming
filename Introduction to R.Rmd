@@ -557,26 +557,40 @@ x-y
 
 
 ```{r }
+numbers <- list(100:150)
+numbers
+numbers_1 <- matrix(101:150, 5, 5)
+numbers_1
 
 ```
 
 
 ```{r }
+lapply(numbers, mean)
+lapply(numbers, sd)
 
 ```
 
 
 ```{r }
-
+sapply(numbers, mean)
+sapply(numbers, sd)
 ```
 
 
 ```{r }
-
+apply(numbers_1,2,mean)
+apply(numbers_1, 2, sd)
 ```
 
 
 ```{r }
+a <- c(100:150)
+a
+b <- gl(4,12.8)  ## generate levels
+b
+
+tapply(a, b, mean)
 
 ```
 
